@@ -10,8 +10,8 @@ import com.curso.java.negocio.GestionAulasLN;
 public class AJugar {
 	public static void main(String[] args) {
 		GestionAulasLN aulasLN = new GestionAulasLN();
-		IAulaDAO aulaListDAOImpl = new AulaMapDAOImpl();
-		aulasLN.setMiDao(aulaListDAOImpl);
+		IAulaDAO aulasDao = new AulaMapDAOImpl();
+		aulasLN.setMiDao(aulasDao);
 		Aula[] arrayNativoDeAulas = new Aula[3];
 		Aula aula1 = new Aula();
 		Aula aula2 = new Aula();
